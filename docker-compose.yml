@@ -27,8 +27,6 @@ services:
   phpmyadmin:
     image: phpmyadmin
     container_name: "phpmyadmin"
-    links:
-      - mysql:mysql
     ports:
       - 8081:80
     depends_on:
